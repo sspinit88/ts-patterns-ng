@@ -1,0 +1,23 @@
+<p>factory:</p>
+<br>
+<button (click)="getOrder('pepperoni')">
+  pepperoni
+</button>
+<br>
+<br>
+<button (click)="getOrder('clam')">
+  clam
+</button>
+<br>
+<br>
+<button (click)="getOrder('cheese')">
+  cheese
+</button>
+<br>
+<br>
+<code *ngIf="order">
+  recipe: {{ order['recipe']['recipe'] }}
+  <br>
+  <br>
+  ingredients: {{ order['recipe']['ingredients'] }}
+</code>

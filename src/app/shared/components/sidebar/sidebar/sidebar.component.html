@@ -1,0 +1,47 @@
+<a [routerLink]="'/'">Главная</a>
+<div *ngIf="list">
+  <div *ngIf="list.patterns as patterns">
+    <div *ngIf="patterns.behavioral as data">
+      <h4>
+        Поведенческие паттерны:
+      </h4>
+      <ul *ngFor="let item of data">
+        <li>
+          <a [routerLink]="['/patterns', item.path]">
+            {{ item.title }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="list.patterns as patterns">
+    <div *ngIf="patterns.generative as data">
+      <h4>
+        Порождающие паттерны:
+      </h4>
+      <ul *ngFor="let item of data">
+        <li>
+          <a [routerLink]="['/patterns', item.path]">
+            {{ item.title }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="list.patterns as patterns">
+    <div *ngIf="patterns.structural as data">
+      <h4>
+        structural
+      </h4>
+      <ul *ngFor="let item of data">
+        <li>
+          <a [routerLink]="['/patterns', item.path]">
+            {{ item.title }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

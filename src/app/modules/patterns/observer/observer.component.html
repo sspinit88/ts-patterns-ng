@@ -1,0 +1,55 @@
+<p>
+  <a href="https://refactoring.guru/ru/design-patterns/observer/typescript/example#lang-features"
+     target="_blank">
+    Наблюдатель
+  </a>
+  — это поведенческий паттерн проектирования, который создаёт механизм подписки, позволяющий одним объектам следить и
+  реагировать на события, происходящие в других объектах.
+</p>
+<br>
+<br>
+<br>
+<form [formGroup]="form">
+  <input formControlName="temperature"
+         type="number"
+         placeholder="temperature:">
+  <br>
+  <br>
+  <input formControlName="pressure"
+         type="number"
+         placeholder="pressure:">
+  <br>
+  <br>
+  <input formControlName="humidity"
+         type="number"
+         placeholder="humidity:">
+</form>
+<br>
+<br>
+<button (click)="update()">
+  Оповестить
+</button>
+<br>
+<br>
+<button (click)="display(1)">
+  Значение Наблюдателя № 1
+</button>
+<button (click)="remove(1)">
+  Удалить Наблюдателя № 1
+</button>
+<br>
+<br>
+<button (click)="display(2)">
+  Значение Наблюдателя № 1
+</button>
+<button (click)="remove(2)">
+  Удалить Наблюдателя № 2
+</button>
+<br>
+<br>
+<button (click)="display(3)">
+  Значение Наблюдателя № 1
+</button>
+<button (click)="remove(3)">
+  Удалить Наблюдателя № 3
+</button>
