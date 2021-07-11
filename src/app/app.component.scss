@@ -1,0 +1,21 @@
+:host {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 96px 1fr;
+  grid-template-areas: 'sidebar header'
+                        'sidebar router-outlet'
+                        'sidebar router-outlet';
+  height: 100%;
+
+  &::ng-deep .header {
+    grid-area: header;
+  }
+
+  &::ng-deep .sidebar {
+    grid-area: sidebar;
+  }
+
+  &::ng-deep .router-outlet {
+    grid-area: router-outlet;
+  }
+}

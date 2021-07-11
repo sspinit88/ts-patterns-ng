@@ -20,7 +20,7 @@ export class SingletonComponent
   }
 
   ngOnInit(): void {
-    this.run()
+    this.run();
   }
 
   run(): void {
@@ -30,10 +30,12 @@ export class SingletonComponent
   runAgain(): void {
     this.testTwo = Singleton.getInstance(this.dataTwo);
 
-    alert(`Open CONSOLE!`)
-
+    alert(`Open CONSOLE!`);
+    // @ts-ignore
     console.group('runAgain():');
+    // @ts-ignore
     console.log('this.test:', this.test);
+    // @ts-ignore
     console.log('this.testTwo:', this.testTwo);
     console.groupEnd();
   }

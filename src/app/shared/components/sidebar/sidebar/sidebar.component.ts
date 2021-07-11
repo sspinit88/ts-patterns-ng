@@ -11,7 +11,7 @@ import { SidebarList } from '../../../interfaces/sidebar-list.interface';
 })
 export class SidebarComponent implements OnInit {
 
-  list: SidebarList;
+  list: SidebarList | undefined;
 
   constructor(
     private sidebarService: SidebarService

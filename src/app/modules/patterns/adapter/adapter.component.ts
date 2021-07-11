@@ -12,7 +12,7 @@ export class AdapterComponent {
   }
 
   duckTestDrive(): void {
-    alert('Открой консоль!')
+    alert('Открой консоль!');
     new DuckTestDrive().main();
   }
 

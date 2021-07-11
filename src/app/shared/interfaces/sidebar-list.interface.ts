@@ -5,5 +5,5 @@ export interface SidebarList {
     generative: RouterPath[];
     structural: RouterPath[];
     behavioral: RouterPath[];
-  },
+  };
 }

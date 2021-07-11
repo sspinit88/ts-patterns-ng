@@ -46,7 +46,7 @@ export class SidebarService {
 
     function sortItem(array: RouterPath[]): RouterPath[] {
       return array
-        .sort(function (a, b): number {
+        .sort((a, b): number => {
           return a.title > b.title ? 1 : -1;
         });
     }
